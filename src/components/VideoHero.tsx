@@ -9,7 +9,9 @@ const VideoHero = memo(() => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.setAttribute('preload', 'auto');
+      videoRef.current.play().catch(error => {
+        console.log("Error playing video:", error);
+      });
     }
   }, []);
 
@@ -25,6 +27,7 @@ const VideoHero = memo(() => {
             className="w-40 md:w-48 lg:w-56"
             width="224"
             height="80"
+            loading="eager"
           />
         </picture>
       </div>
@@ -45,6 +48,7 @@ const VideoHero = memo(() => {
           muted 
           loop 
           playsInline
+          preload="auto"
           className="w-full h-full object-cover"
           aria-label="Video de fondo de castano"
         >
