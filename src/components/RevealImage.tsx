@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -16,21 +17,28 @@ const RevealImage = ({ imageUrl }: RevealImageProps) => {
         zIndex: 1
       }}
     >
-      <div 
-        style={{
-          backgroundImage: `url("${imageUrl || defaultImage}")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: -1
-        }}
-      />
-      {/* El bloque de contenido debe estar dentro del contenedor principal */}
+      <picture>
+        <source srcSet={imageUrl?.replace('.jpg', '.webp') || defaultImage.replace('.jpg', '.webp')} type="image/webp" />
+        <img 
+          src={imageUrl || defaultImage}
+          alt="Background image"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
+          width="1920"
+          height="600"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            zIndex: -1,
+            objectFit: 'cover'
+          }}
+        />
+      </picture>
+      
       <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-4">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif mb-4 md:mb-6">
         Exclusive Dressage Horse Sales – Your Chance to Ride Excellence

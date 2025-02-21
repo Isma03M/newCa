@@ -1,20 +1,33 @@
 
-import { memo } from "react";
+import { memo, useEffect, useRef } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const VideoHero = memo(() => {
   console.log("Rendering VideoHero component");
   const isMobile = useIsMobile();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.setAttribute('preload', 'auto');
+    }
+  }, []);
 
   return (
     <section className="relative w-full h-screen">
       {/* Logo */}
       <div className="absolute top-0 left-0 w-full flex justify-center items-center z-20 pt-4">
-        <img 
-          src="/Img/castañologo.png" 
-          alt="El Castaño Logo" 
-          className="w-40 md:w-48 lg:w-56"
-        />
+        <picture>
+          <source srcSet="/Img/castañologo.webp" type="image/webp" />
+          <img 
+            src="/Img/castañologo.png" 
+            alt="El Castaño Logo" 
+            className="w-40 md:w-48 lg:w-56"
+            width="224"
+            height="80"
+            priority="true"
+          />
+        </picture>
       </div>
 
       {/* Degradados */}
@@ -28,6 +41,7 @@ const VideoHero = memo(() => {
       {/* Video */}
       <div className="absolute inset-0 z-0 flex items-center justify-center bg-[#001233]">
         <video 
+          ref={videoRef}
           autoPlay 
           muted 
           loop 

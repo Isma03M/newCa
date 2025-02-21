@@ -8,24 +8,42 @@ const ImagesSection = memo(() => {
     <section className="bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <img 
-            src="/Img/14.jpg" 
-            alt="Caballo en entrenamiento" 
-            className="w-full h-[300px] object-cover rounded-lg"
-            loading="lazy"
-          />
-          <img 
-            src="/Img/15.jpg" 
-            alt="Caballo en entrenamiento" 
-            className="w-full h-[300px] object-cover rounded-lg"
-            loading="lazy"
-          />
-          <img 
-            src="/Img/16.jpg" 
-            alt="Caballo en entrenamiento" 
-            className="w-full h-[300px] object-cover rounded-lg"
-            loading="lazy"
-          />
+          <picture>
+            <source srcSet="/Img/14.webp" type="image/webp" />
+            <img 
+              src="/Img/14.jpg" 
+              alt="Caballo en entrenamiento" 
+              className="w-full h-[300px] object-cover rounded-lg"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="300"
+            />
+          </picture>
+          <picture>
+            <source srcSet="/Img/15.webp" type="image/webp" />
+            <img 
+              src="/Img/15.jpg" 
+              alt="Caballo en entrenamiento" 
+              className="w-full h-[300px] object-cover rounded-lg"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="300"
+            />
+          </picture>
+          <picture>
+            <source srcSet="/Img/16.webp" type="image/webp" />
+            <img 
+              src="/Img/16.jpg" 
+              alt="Caballo en entrenamiento" 
+              className="w-full h-[300px] object-cover rounded-lg"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="300"
+            />
+          </picture>
         </div>
 
         <div className="max-w-4xl mx-auto text-center">
