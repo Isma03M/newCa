@@ -25,7 +25,6 @@ const VideoHero = memo(() => {
             className="w-40 md:w-48 lg:w-56"
             width="224"
             height="80"
-            priority="true"
           />
         </picture>
       </div>
