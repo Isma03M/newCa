@@ -11,9 +11,9 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    outDir: "dist", // Carpeta de salida
+    outDir: "dist",
     rollupOptions: {
-      input: "./index.html", // Asegúrate de que apunte a tu archivo HTML principal
+      input: "./index.html",
     },
   },
   plugins: [
@@ -26,4 +26,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-
