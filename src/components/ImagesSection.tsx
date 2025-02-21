@@ -63,3 +63,4 @@ const ImagesSection = memo(() => {
 ImagesSection.displayName = 'ImagesSection';
 
 export default ImagesSection;
+

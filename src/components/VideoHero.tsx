@@ -18,18 +18,15 @@ const VideoHero = memo(() => {
     <section className="relative w-full h-screen">
       {/* Logo */}
       <div className="absolute top-0 left-0 w-full flex justify-center items-center z-20 pt-4">
-        <picture>
-          <source srcSet="/Img/castañologo.webp" type="image/webp" />
-          <img 
-            src="/Img/castañologo.png" 
-            alt="El Castaño Logo" 
-            className="w-40 md:w-48 lg:w-56"
-            width="224"
-            height="80"
-            loading="eager"
-            fetchPriority="high"
-          />
-        </picture>
+        <img 
+          src="/Img/castañologo.png" 
+          alt="El Castaño Logo" 
+          className="w-40 md:w-48 lg:w-56"
+          width="224"
+          height="80"
+          loading="eager"
+          fetchPriority="high"
+        />
       </div>
 
       {/* Degradados */}
