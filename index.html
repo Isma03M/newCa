@@ -1,54 +1,18 @@
 
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Castaño</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="/" class="logo">
-                <img src="/Img/castañologo.png" alt="El Castaño" class="nav-logo">
-            </a>
-            <button class="mobile-menu-button" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/team">TEAM</a></li>
-                <li><a href="/breeding">BREEDING PROGRAM</a></li>
-                <li><a href="/sponsors">SPONSORS</a></li>
-                <li><a href="/facilities">FACILITIES</a></li>
-                <li><a href="/sales">SALES</a></li>
-                <li><a href="/news">NEWS</a></li>
-                <li><a href="/contact">CONTACT</a></li>
-            </ul>
-        </div>
-    </nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>El castaño</title>
+    <meta name="description" content="El Castaño - Instalaciones de entrenamiento ecuestre de primer nivel"/>
+    <meta name="author" content="El Castaño" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <!-- Logo -->
-        <div class="hero-logo">
-            <img src="/Img/castañologo.png" alt="El Castaño Logo" width="224" height="80">
-        </div>
-
-        <!-- Video Background -->
-        <div class="hero-video-container">
-            <video autoplay muted loop playsinline preload="auto" class="hero-video">
-                <source src="/Img/El Castaño Teaser.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
-        </div>
-    </section>
-
-    <script src="main.js"></script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
