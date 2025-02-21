@@ -25,6 +25,8 @@ const RevealImage = ({ imageUrl }: RevealImageProps) => {
           className="absolute inset-0 w-full h-full object-cover"
           width="1920"
           height="600"
+          loading="eager"
+          fetchPriority="high"
           style={{
             position: 'absolute',
             top: 0,
@@ -46,6 +48,7 @@ const RevealImage = ({ imageUrl }: RevealImageProps) => {
             src="/Img/divisor.png"
             alt="Divisor decorativo"
             className="h-8"
+            loading="eager"
           />
         </div>
         <p className="max-w-sm md:max-w-xl lg:max-w-2xl text-base md:text-lg mb-8 md:mb-12">
@@ -69,3 +72,4 @@ const RevealImage = ({ imageUrl }: RevealImageProps) => {
 };
 
 export default RevealImage;
+
