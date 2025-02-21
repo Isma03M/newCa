@@ -23,8 +23,6 @@ const RevealImage = ({ imageUrl }: RevealImageProps) => {
           src={imageUrl || defaultImage}
           alt="Background image"
           className="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
-          decoding="async"
           width="1920"
           height="600"
           style={{
@@ -48,25 +46,23 @@ const RevealImage = ({ imageUrl }: RevealImageProps) => {
             src="/Img/divisor.png"
             alt="Divisor decorativo"
             className="h-8"
-            loading="lazy"
           />
         </div>
         <p className="max-w-sm md:max-w-xl lg:max-w-2xl text-base md:text-lg mb-8 md:mb-12">
         Discover impeccably bred and masterfully trained Lusitanos, ready to elevate your dressage journey.
         </p>
         <Link
-  to="/sales"
-  className="relative inline-block rounded-md overflow-hidden transition-colors duration-300 px-6 md:px-8 py-2 md:py-3 text-base md:text-lg tracking-wider border-2 border-white"
-  aria-label="Aprende más sobre Iron Rock Dressage"
-  style={{
-    backgroundImage: 'url("/Img/plateado.png")', // Cambia el nombre de la imagen según sea necesario
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-  <span className="text-[#001233] rounded-md px-8 py-3 text-sm w-auto max-w-[200px]">VIEW SALES</span>
-</Link>
-
+          to="/sales"
+          className="relative inline-block rounded-md overflow-hidden transition-colors duration-300 px-6 md:px-8 py-2 md:py-3 text-base md:text-lg tracking-wider border-2 border-white"
+          aria-label="Aprende más sobre Iron Rock Dressage"
+          style={{
+            backgroundImage: 'url("/Img/plateado.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <span className="text-[#001233] rounded-md px-8 py-3 text-sm w-auto max-w-[200px]">VIEW SALES</span>
+        </Link>
       </div>
     </div>
   );

@@ -14,8 +14,6 @@ const ImagesSection = memo(() => {
               src="/Img/14.jpg" 
               alt="Caballo en entrenamiento" 
               className="w-full h-[300px] object-cover rounded-lg"
-              loading="lazy"
-              decoding="async"
               width="400"
               height="300"
             />
@@ -26,8 +24,6 @@ const ImagesSection = memo(() => {
               src="/Img/15.jpg" 
               alt="Caballo en entrenamiento" 
               className="w-full h-[300px] object-cover rounded-lg"
-              loading="lazy"
-              decoding="async"
               width="400"
               height="300"
             />
@@ -38,8 +34,6 @@ const ImagesSection = memo(() => {
               src="/Img/16.jpg" 
               alt="Caballo en entrenamiento" 
               className="w-full h-[300px] object-cover rounded-lg"
-              loading="lazy"
-              decoding="async"
               width="400"
               height="300"
             />
@@ -57,12 +51,10 @@ const ImagesSection = memo(() => {
               src="/Img/divisor.png" 
               alt="Divisor decorativo" 
               className="h-8"
-              loading="lazy"
             />
           </div>
           <p className="body-text text-[#001233] leading-relaxed mb-8">
           EC Dressage is a world-class training and sales facility dedicated to producing top-tier dressage competitors in the breathtaking landscape of Monterrey, Mexico. With a commitment to excellence, the EC Dressage team takes pride in developing Lusitanos with exceptional temperaments and superior movement, crafted for elite competitors and discerning amateur riders who seek unparalleled excellence.
-
           </p>
         </div>
       </div>
