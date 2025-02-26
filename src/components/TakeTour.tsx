@@ -13,14 +13,17 @@ const TakeTour = memo(() => {
   return (
     <section className="relative w-full h-[600px]">
       {/* Video de fondo */}
-      <video 
-        autoPlay 
-        loop 
-        muted 
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/Img/Videotake.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dye5zvd2q/video/upload/f_auto:video,q_auto/v1/Img/qaqow1dzwlzfnoqqbzet" type="video/mp4" />
       </video>
+
+
 
       {/* Capa de superposición oscura */}
       <div className="absolute inset-0 bg-black/40">
@@ -28,26 +31,26 @@ const TakeTour = memo(() => {
           <h2 className="text-5xl font-serif mb-6">TAKE A TOUR
           </h2>
           <div className="flex justify-center mb-12">
-        <img
-          src="/Img/divisor.png"
-          alt="Divisor decorativo"
-          className="h-8"
-          loading="lazy"
-        />
-      </div>          <p className="text-xl mb-4 text-center max-w-3xl">
-          View our wold class facilieties and stunning Mountains at EC Dressage.
-         </p>
-         <Button 
-  className="text-[#001233] rounded-md px-8 py-3 text-sm w-auto max-w-[200px]"
-  variant="outline" 
-  style={{
-    backgroundImage: 'url("/Img/plateado.png")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-  View Facility
-</Button>
+            <img
+              src="/Img/divisor.png"
+              alt="Divisor decorativo"
+              className="h-8"
+              loading="lazy"
+            />
+          </div>          <p className="text-xl mb-4 text-center max-w-3xl">
+            View our wold class facilieties and stunning Mountains at EC Dressage.
+          </p>
+          <Button
+            className="text-[#001233] rounded-md px-8 py-3 text-sm w-auto max-w-[200px]"
+            variant="outline"
+            style={{
+              backgroundImage: 'url("/Img/plateado.png")',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            View Facility
+          </Button>
 
 
         </div>

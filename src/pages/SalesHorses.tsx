@@ -27,7 +27,7 @@ const SalesHorses = () => {
           <div className="relative h-full flex flex-col items-center justify-center px-8 md:px-16 lg:px-24">
             <div className="max-w-4xl space-y-8 text-center">
               <h1 className="text-7xl md:text-8xl lg:text-9xl font-serif text-white tracking-wider">
-              VENDIDO
+              
               </h1>
               
               <div className="flex justify-center">
@@ -39,10 +39,7 @@ const SalesHorses = () => {
               </div>
 
               <p className="text-xl md:text-2xl lg:text-3xl font-serif text-white tracking-wide leading-relaxed">
-                TOP TIER DRESSAGE<br />
-                HORSES READY TO<br />
-                PERFORM FOR THEIR<br />
-                NEW OWNERS
+               
               </p>
             </div>
           </div>
@@ -52,7 +49,7 @@ const SalesHorses = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-wide text-white">
-                NEW PARTNERS, BRIGHT FUTURES
+                {/* NEW PARTNERS, BRIGHT FUTURES */}
               </h2>
               
               <div className="flex justify-center">
@@ -64,7 +61,7 @@ const SalesHorses = () => {
               </div>
 
               <p className="text-lg md:text-xl leading-relaxed text-white max-w-3xl mx-auto">
-                New Partners, Exceptional Homes, Bright Futures Iron Rock Dressage is proud to facilitate strong matches between exceptional performance horses and capable riders. Our horses are excelling in the hands of both international professionals and top tier amateurs at both the FEI and CDI levels of competition. Our passion continues to grow with every successful partnership, and we are committed to growing the Iron Rock family with solid, capable, and talented horses. We invite you to our Testimonials page to hear from our clients first hand how they've found success in their Iron Rock partners.
+                {/* New Partners, Exceptional Homes, Bright Futures Iron Rock Dressage is proud to facilitate strong matches between exceptional performance horses and capable riders. Our horses are excelling in the hands of both international professionals and top tier amateurs at both the FEI and CDI levels of competition. Our passion continues to grow with every successful partnership, and we are committed to growing the Iron Rock family with solid, capable, and talented horses. We invite you to our Testimonials page to hear from our clients first hand how they've found success in their Iron Rock partners. */}
               </p>
             </div>
           </div>

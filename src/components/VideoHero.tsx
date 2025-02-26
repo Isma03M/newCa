@@ -1,58 +1,50 @@
-
-import { memo, useEffect, useRef } from "react";
+import { memo } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const VideoHero = memo(() => {
   console.log("Rendering VideoHero component");
   const isMobile = useIsMobile();
-  const videoRef = useRef<HTMLVideoElement>(null);
+  console.log("isMobile:", isMobile);
 
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.setAttribute('preload', 'auto');
-      videoRef.current.load(); // Forzar la carga del video
-    }
-  }, []);
+  const videoSrc = isMobile
+    ? "https://www.ironrockdressage.com/wp-content/uploads/2023/09/Website-Trailer-23MB.mp4"
+    : "https://res.cloudinary.com/dye5zvd2q/video/upload/f_auto:video,q_auto/v1/Img/qdjnfjhd5s4t1koeszjh";
 
   return (
-    <section className="relative w-full h-screen">
-      {/* Logo */}
-      <div className="absolute top-0 left-0 w-full flex justify-center items-center z-20 pt-4">
-        <img 
-          src="/Img/castañologo.png" 
-          alt="El Castaño Logo" 
-          className="w-40 md:w-48 lg:w-56"
-          width="224"
-          height="80"
-          loading="eager"
-          fetchPriority="high"
-        />
-      </div>
-
-      {/* Degradados */}
+    <section className="relative w-full h-screen overflow-hidden bg-[#000C24]">
+      {/* Degradados solo en móvil */}
       {isMobile && (
         <>
-          <div className="absolute top-0 left-0 w-full h-[15%] bg-gradient-to-b from-black to-[#001233] z-10"></div>
-          <div className="absolute bottom-0 left-0 w-full h-[15%] bg-gradient-to-t from-[#001233] to-black z-10"></div>
+          {/* Degradado superior */}
+          <div 
+            className="absolute top-0 left-0 right-0 h-[40vh] z-10"
+            style={{
+              background: 'linear-gradient(to bottom, rgba(0,12,36,0.9) 0%, rgba(0,12,36,0.7) 50%, rgba(0,12,36,0) 100%)'
+            }}
+          />
+          
+          {/* Degradado inferior */}
+          <div 
+            className="absolute bottom-0 left-0 right-0 h-[40vh] z-10"
+            style={{
+              background: 'linear-gradient(to top, rgba(0,12,36,0.9) 0%, rgba(0,12,36,0.7) 50%, rgba(0,12,36,0) 100%)'
+            }}
+          />
         </>
       )}
 
-      {/* Video */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center bg-[#001233]">
-        <video 
-          ref={videoRef}
-          autoPlay 
-          muted 
-          loop 
+      {/* Contenedor de video */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          muted
+          loop
           playsInline
-          className="w-full h-full object-cover"
-          aria-label="Video de fondo de castano"
           preload="auto"
+          className="w-full h-full object-cover"
+          aria-label="Video de fondo"
         >
-          <source 
-            src="/Img/El Castaño Teaser.mp4" 
-            type="video/mp4" 
-          />
+          <source src={`${videoSrc}.mp4`} type="video/mp4" />
           Tu navegador no soporta el elemento de video.
         </video>
       </div>
@@ -60,7 +52,6 @@ const VideoHero = memo(() => {
   );
 });
 
-VideoHero.displayName = 'VideoHero';
+VideoHero.displayName = "VideoHero";
 
 export default VideoHero;
-

@@ -98,7 +98,7 @@ CATEGORIA DE PRECIOS          </h2>
               <div className="relative group">
                 <img 
                   src="/lovable-uploads/6e1487de-6abb-447c-ba8c-a5bac276ff09.png" 
-                  alt="Galan Corazon De Leon"
+                  alt=""
                   className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -110,9 +110,9 @@ CATEGORIA DE PRECIOS          </h2>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-serif text-center mb-2">GALAN CORAZON DE LEON</h3>
-                <p className="text-center text-sm mb-6 italic">2012 16.3h BAY PRE GELDING</p>
-                <p className="text-center text-xs mb-4">Jakato XCV × Galana JF</p>
+                <h3 className="text-2xl font-serif text-center mb-2"></h3>
+                <p className="text-center text-sm mb-6 italic"></p>
+                <p className="text-center text-xs mb-4"></p>
                 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div>
@@ -130,7 +130,7 @@ CATEGORIA DE PRECIOS          </h2>
                 </div>
 
                 <Link 
-                  to="/sales/galan-corazon"
+                  to="/sales/aaaaa"
                   className="block w-48 mx-auto text-center bg-gray-200 py-2 hover:bg-gray-300 transition-colors"
                 >
                   VER DETALLES
@@ -143,7 +143,7 @@ CATEGORIA DE PRECIOS          </h2>
               <div className="relative group">
                 <img 
                   src="/lovable-uploads/6e1487de-6abb-447c-ba8c-a5bac276ff09.png" 
-                  alt="Moondance"
+                  alt=""
                   className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -155,9 +155,9 @@ CATEGORIA DE PRECIOS          </h2>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-serif text-center mb-2">MOONDANCE</h3>
-                <p className="text-center text-sm mb-6 italic">2017 16.2H BAY KWPN GELDING</p>
-                <p className="text-center text-xs mb-4">First Romancer — First Heinrich × Zippy Top T — Rousseau</p>
+                <h3 className="text-2xl font-serif text-center mb-2"></h3>
+                <p className="text-center text-sm mb-6 italic"></p>
+                <p className="text-center text-xs mb-4"></p>
                 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div>
@@ -166,16 +166,16 @@ CATEGORIA DE PRECIOS          </h2>
                   </div>
                   <div>
                     <p className="font-bold">NIVEL</p>
-                    <p>Schooling Third, Second Level</p>
+                    <p></p>
                   </div>
                   <div>
                     <p className="font-bold">UBICACIÓN</p>
-                    <p>Millbrook, NY</p>
+                    <p></p>
                   </div>
                 </div>
 
                 <Link 
-                  to="/sales/moondance"
+                  to="/sales/aaa"
                   className="block w-48 mx-auto text-center bg-gray-200 py-2 hover:bg-gray-300 transition-colors"
                 >
                   VER DETALLES
